@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<p>custompipes works!</p>
+<select>
+    <option *ngFor='let hero of superHeros' [value]="hero.id">
+    {{ hero.name | CustomHero: hero.id  }}
+    <!-- {{ hero.name }} -->
+    </option>
+</select>

@@ -3,14 +3,23 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormComponent } from './form/form.component';
+import { CustompipesComponent } from './custompipes/custompipes.component';
+import { cheropipes } from './custompipes/cheropipes';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormComponent,
+    CustompipesComponent,
+    cheropipes,
+   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

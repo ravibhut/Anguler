@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Login Form</h2>
+    <form>
+      <div class="container">
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" #u />
+        <div [class.dnone] = "hasErroru" class="text-denger">user name is required</div> 
+
+        <label><b>Password</b></label>
+        <input type="text" placeholder="Enter Password" #p />
+        <div [class.dnone] = "hasErrorp">password name is required</div> 
+
+        <button [disabled] = "u.value === '' && p.value === ''" (click)= "onClick(u, p)" type="button">Login</button>
+      </div>
+    </form>
+  </body>
+</html>
