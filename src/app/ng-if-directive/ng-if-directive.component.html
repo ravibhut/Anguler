@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<h1>ng-if-directive works!</h1>
+
+<h2 *ngIf="displayName; then thenBlock; else elseBlock">true ngif</h2>
+
+
+<ng-template #thenBlock>
+    <h2>Name is show</h2>
+</ng-template>
+
+<ng-template #elseBlock>
+    <h2>Name is hidden</h2>
+</ng-template>
