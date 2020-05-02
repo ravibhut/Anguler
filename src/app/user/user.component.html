@@ -1,0 +1,12 @@
+<div>
+    <button routerLink="/">Go to home</button>
+    <hr>
+    <div>
+        Name: <input type="text" [(ngModel)]="name">
+    </div>
+    <div>
+        Lastname: <input type="text" [(ngModel)]="lastname">
+    </div>
+    <button (click) = "addUser()" *ngIf="!id">Add User</button>
+    <button (click) = "editUser()" *ngIf="id">Update</button>
+</div>

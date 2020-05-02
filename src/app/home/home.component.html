@@ -1,0 +1,24 @@
+<button><a routerLink="/user">+ Add Users</a></button>
+<h1>data</h1>
+<table>
+  <th>ID</th>
+  <th>Name</th>
+  <th>Last Name</th>
+  <th>Edit</th>
+  <th>Delete</th>
+  <tr *ngFor="let product of Datas">
+    <td>{{ product.id }}</td>
+    <td>{{ product.name }}</td>
+    <td>{{ product.lastname }}</td>
+    <td>
+      <button type="button" class="btn btn-primary" (click)="editUser(product.id)">
+        Edit
+      </button>
+    </td>
+    <td>
+      <button type="button" class="btn btn-danger" (click)="deleteUser(product.id)">
+        Delete
+      </button>
+    </td>
+  </tr>
+</table>
